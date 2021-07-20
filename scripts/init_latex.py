@@ -10,6 +10,10 @@ import os
 
 def main():
     """Generate a LaTeX file."""
+    init_latex()
+
+def init_latex():
+    """Generate a LaTeX file."""
     args = argparser()
     
     main_fname = "main.tex"

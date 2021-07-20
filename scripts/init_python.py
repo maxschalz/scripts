@@ -9,6 +9,10 @@ import os
 
 def main():
     """Generate a Python script with a main, shebang, etc."""
+    init_python()
+
+def init_python():
+    """Generate a Python script with a main, shebang, etc."""
     args = argparser()
 
     cwd = os.getcwd()

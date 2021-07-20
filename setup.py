@@ -16,7 +16,9 @@ def main():
         packages=["scripts"],
         classifiers=["License :: OSI Approved :: BSD-3-Clause License",
                      "Programming Language :: Python :: 3"],
-        install_requires=None
+        install_requires=None,
+        entry_points={"console_scripts": ["initpython = scripts:init_python",
+                                          "initlatex = scripts:init_latex"]},
     )
 
 if __name__=="__main__":
