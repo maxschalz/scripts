@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = "Max Schalz"
-__license__ = "BSD-3-Clause"
-
 import argparse
 import os
 
@@ -59,7 +56,7 @@ def argparser():
     parser = argparse.ArgumentParser(description=description)
 
     dirname = ("Name of the directory in which the LaTeX files will be"
-               + "generated into.")
+               + " generated into.")
     parser.add_argument("dirname", metavar="directory name", type=str,
                         help=dirname)
     
@@ -75,7 +72,7 @@ def argparser():
     title = "Title of the LaTeX article."
     parser.add_argument("--title", type=str, default="Document",
                         help=title)
-    bib = "If this flag is set, a Bib-LaTeX bibliography is added."
+    bib = "If this flag is set, a biblatex bibliography is added."
     parser.add_argument("--bib", action="store_true", help=bib)
 
     no_toc = "If this flag is set, do not include a table of contents."

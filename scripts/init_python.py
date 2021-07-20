@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = "Max Schalz"
-__license__ = "BSD-3-Clause"
-
 import argparse
 import os
 
@@ -93,14 +90,14 @@ def file_input(args):
 
     if args.ap:
         lines.append(ap)
+    if args.plt:
+        lines.append(plt)
     if args.np:
         lines.append(np)
     if args.os:
         lines.append(os)
     if args.pd:
         lines.append(pd)
-    if args.plt:
-        lines.append(plt)
     lines.append("\n")
 
     lines.append(main_)
