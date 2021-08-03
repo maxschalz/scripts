@@ -18,7 +18,8 @@ def main():
                      "Programming Language :: Python :: 3"],
         install_requires=None,
         entry_points={"console_scripts": ["initpython = scripts:init_python",
-                                          "initlatex = scripts:init_latex"]},
+                                          "initlatex = scripts:init_latex",
+                                          "initconfig = scripts:cmdline_config"]},
     )
 
 if __name__=="__main__":

@@ -8,6 +8,7 @@ Currently, one can initialise Python scripts and LaTeX files.
 
 from .init_python import init_python
 from .init_latex import init_latex
+from .config import cmdline_config
 
 __author__ = "Max Schalz"
 __copyright__ = "Copyright 2021, Max Schalz"

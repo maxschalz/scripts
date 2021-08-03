@@ -4,3 +4,5 @@ eggs/
 .eggs/
 *.egg-info/
 *.egg
+
+config.ini
