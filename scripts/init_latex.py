@@ -55,13 +55,13 @@ def argparser():
     description = "Initialise the main files needed in a LaTeX article."
     parser = argparse.ArgumentParser(description=description)
     
-    group=parser.add_mutually_exclusive_group(required=True)
+    group = parser.add_mutually_exclusive_group(required=True)
     dirname = ("Name of the directory in which the LaTeX files will be"
                + " generated into.")
     group.add_argument("dirname", metavar="directory name", type=str,
                        nargs='?', help=dirname)
     current_dir = ("If this flag is set, the files are generated into "
-                 + "the current working directory.")
+                   + "the current working directory.")
     group.add_argument("--current_dir", action="store_true",
                        help=current_dir)
     
